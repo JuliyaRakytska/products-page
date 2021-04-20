@@ -3,6 +3,7 @@
  }
  hr {
     color: #fc5a5a;
+    display: block;
 
     
  }
@@ -24,6 +25,16 @@
  .product-item img {
     display: block;
     width: 100%;
+ }
+ .showProduct {
+    display: block;
+    height: 30%;
+ }
+ .productCatalog {
+    display: block;
+ }
+ .categoryCatalog {
+    display: inline-flex;
  }
  /* .product-list {
     background: #fafafa;
