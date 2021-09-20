@@ -1,69 +1,80 @@
 * {
-    box-sizing: border-box;
- }
- hr {
-    color: #fc5a5a;
-    display: block;
+  box-sizing: border-box;
+}
 
-    
- }
- 
- .product-item {
-   float: left;
-   width: 20%;
-   padding: 0 10px;
-    text-align: center;
-    margin: 0 auto;
-    border-bottom: 2px solid #F5F5F5;
-    background: white;
-    font-family: "Open Sans";
-    transition: .3s ease-in;
- }
- .product-item:hover {
-    border-bottom: 2px solid #fc5a5a;
- }
- .product-item img {
-    display: block;
-    width: 100%;
- }
- .showProduct {
-    display: block;
-    height: 30%;
- }
- .productCatalog {
-    display: block;
- }
- .categoryCatalog {
-    display: inline-flex;
- }
- /* .product-list {
-    background: #fafafa;
-    padding: 15px 0;
- } */
- /* .product-list  */
- h3 {
-    font-size: 18px;
-    font-weight: 400;
-    color: #444444;
-    margin: 0 0 10px 0;
- }
- .price {
-    font-size: 16px;
-    color: #fc5a5a;
-    display: block;
-    margin-bottom: 12px;
- }
- .button {
-    text-decoration: none;
-    display: inline-block;
-    padding: 0 12px;
-    background: #cccccc;
-    color: white;
-    text-transform: uppercase;
-    font-size: 12px;
-    line-height: 28px;
-    transition: .3s ease-in;
- }
- .product-item:hover .button {
-    background: #fc5a5a;
- }
+.productList,
+.categoryCatalog {
+  background: #fafafa;
+  display: block;
+  padding: 15px 0;
+  overflow: hidden;
+}
+.product-item {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 19%;
+  height: 500px;
+  text-align: center;
+  margin: 5px;
+  border-bottom: 2px solid #f5f5f5;
+  background: white;
+  font-family: "Open Sans";
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.product-item:hover {
+  border-bottom: 2px solid #fc5a5a;
+}
+.item-image {
+  display: block;
+  width: 100%;
+  height: 65%;
+  object-fit: contain;
+}
+
+
+.showProduct {
+  display: inline-flex;
+  margin: 15px;
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #444444;
+  margin: 0 0 10px 0;
+}
+.item-price {
+  font-size: 16px;
+  color: #fc5a5a;
+  display: block;
+  margin-bottom: 12px;
+}
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 12px;
+  background: #cccccc;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 28px;
+  transition: 0.3s ease-in;
+}
+.button:hover {
+  background: #fc5a5a;
+}
+
+.cardItemImg {
+  width: 60%;
+  margin-right: 5px;
+}
+
+.categoryHeader {
+  display: none;
+}
+
+
+
